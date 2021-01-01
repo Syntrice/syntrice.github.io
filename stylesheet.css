@@ -63,3 +63,18 @@ footer {
 footer {
   background-color: #c0ac92;
 }
+
+.box {
+  padding: 1rem;
+  margin: 1rem;
+  border-style: solid;
+}
+
+.download-link {
+  display: inline-block;
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+  background-color: lightgray;
+  padding: 1rem;
+  color: inherit;
+}
