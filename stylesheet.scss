@@ -1,0 +1,69 @@
+$color-main: rgb(192, 172, 146);
+
+*, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: $color-main;
+}
+
+.title-container {
+    padding: 1rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    flex: 1;
+}
+
+.nav-link {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    background-color: lighten($color-main, $amount: 20);
+    color: inherit;
+}
+
+.nav-link:hover {
+    transition: 350ms;
+    background-color: lighten($color-main, $amount: 10);
+}
+
+
+main {
+    padding: 1rem;
+    min-height: 75vh;
+}
+
+footer {
+    display: table;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 0.5rem;
+}
+
+footer {
+    background-color: $color-main;
+}
+
