@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300;400&display=swap");
 /* ----------------------------- Main Page Structure (Nav, Header, Main etc) ----------------------------- */
 *,
 body {
@@ -6,8 +7,7 @@ body {
   padding: 0;
 }
 
-section {
-  padding: 0.5rem;
+section, section > * {
   margin: 0.5rem;
 }
 
@@ -31,11 +31,6 @@ section {
   align-items: center;
 }
 
-.button {
-  padding: 0.5rem;
-  flex: 1;
-}
-
 .flex-box {
   display: flex;
   flex-wrap: wrap;
@@ -43,20 +38,27 @@ section {
 
 .flex-box > * {
   flex: 1;
-  margin-right: 1rem;
+}
+
+.flex-box-header {
+  flex: 1 0 100%;
   margin-bottom: 0.5rem;
 }
 
-.section-box-title {
-  flex: 1 0 100%;
+.panel > * {
+  margin: 0.5rem;
+}
+
+.button {
+  padding: 1rem;
 }
 
 footer {
-  display: table;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  padding: 0.5rem;
+  padding: 0.25rem;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
 }
 
 /* ------------------------------- Page Style ------------------------------- */
@@ -66,11 +68,14 @@ header {
 
 .title {
   letter-spacing: 0.25rem;
-  color: #4e402d;
+}
+
+.title, .subtitle {
+  color: #3a3838;
 }
 
 footer {
-  background-color: #c0ac92;
+  background-color: #e5ddd3;
 }
 
 .nav-link,
@@ -82,24 +87,28 @@ footer {
 
 .nav-link:hover,
 .button:hover {
-  transition: 350ms;
+  transition: background-color 350ms;
   background-color: #d3c5b2;
 }
 
 .nav-link.selected {
   text-decoration: underline;
+  text-underline-offset: 0.25rem;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #a19d9d;
 }
 
-.section-box {
+.panel {
   border-style: solid;
-  border-color: #c0ac92;
-  border-width: 6px;
-  border-radius: 8px;
+  border-color: #7b7777;
+  border-width: 2px;
+  background-color: #f4f1ec;
 }
 
 /* ---------------------------------- Fonts --------------------------------- */
 html {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1,
@@ -108,5 +117,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }

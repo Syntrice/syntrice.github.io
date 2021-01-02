@@ -1,5 +1,6 @@
-/* ----------------------------- Main Page Structure (Nav, Header, Main etc) ----------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300;400&display=swap');
 
+/* ----------------------------- Main Page Structure (Nav, Header, Main etc) ----------------------------- */
 *,
 body {
   box-sizing: border-box;
@@ -7,8 +8,7 @@ body {
   padding: 0;
 }
 
-section {
-  padding: 0.5rem;
+section, section > * {
   margin: 0.5rem;
 }
 
@@ -32,39 +32,41 @@ section {
   align-items: center;
 }
 
-.button {
-  padding: 0.5rem;
-  flex: 1;
-}
-
 .flex-box {
   display: flex;
   flex-wrap: wrap;
 }
 
 .flex-box > * {
-    flex: 1;
-    margin-right: 1rem;
-    margin-bottom: 0.5rem;
+  flex: 1;
 }
 
-.section-box-title {
+.flex-box-header {
   flex: 1 0 100%;
+  margin-bottom: 0.5rem;
+}
+
+.panel > * {
+  margin: 0.5rem;
+}
+
+.button {
+  padding: 1rem;
 }
 
 footer {
-  display: table;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  padding: 0.5rem;
+  padding: 0.25rem;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
 }
 
 /* ------------------------------- Page Style ------------------------------- */
 
 // SCSS Variables
 $color-main: rgb(192, 172, 146);
-$color-secondary: rgb(172, 172, 172);
+$color-secondary: rgb(58, 56, 56);
 
 header {
   background-color: $color-main;
@@ -72,12 +74,15 @@ header {
 
 .title {
     letter-spacing: 0.25rem;
-    color: darken($color-main, $amount: 42);
+}
+
+.title, .subtitle {
+  color: $color-secondary;
 }
 
 
 footer {
-  background-color: $color-main;
+  background-color: lighten($color-main, $amount: 20);
 }
 
 .nav-link,
@@ -89,25 +94,29 @@ footer {
 
 .nav-link:hover,
 .button:hover {
-  transition: 350ms;
+  transition: background-color 350ms;
   background-color: lighten($color-main, $amount: 10);
 }
 
 .nav-link.selected {
-    text-decoration: underline;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+  text-decoration-color: lighten($color-secondary, $amount: 40);
 }
 
-.section-box {
+.panel {
   border-style: solid;
-  border-color: $color-main;
-  border-width: 6px;
-  border-radius: 8px;
+  border-color: lighten($color-secondary, $amount: 25);
+  border-width: 2px;
+  background-color: lighten($color-main, $amount: 28);
 }
 
 /* ---------------------------------- Fonts --------------------------------- */
 
 html {
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1,
@@ -116,5 +125,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
