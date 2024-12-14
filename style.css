@@ -1,0 +1,162 @@
+/**------------------------------------------------------------------------
+ *                           Layout
+ *------------------------------------------------------------------------**/
+
+body {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+
+#page-main {
+    flex-grow: 1;
+}
+
+body > * {
+    padding: 0 20px;
+}
+
+#page-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.page-title-container {
+    flex: 2;
+    margin: 0;
+}
+
+.nav-container {
+    flex: 1;
+    margin: 0;
+}
+
+.page-title {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    gap: 10px;
+    padding: 0;
+}
+
+.navbar-list li {
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+.navbar-link {
+    display: block;
+    text-align: center;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-footer {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    list-style: none;
+}
+
+/**------------------------------------------------------------------------
+ *                           Style
+ *------------------------------------------------------------------------**/
+
+:root {
+    --primary-color: #2d3236;
+    --primary-color-light: #4e575e;
+
+    --secondary-color: #cfd8e0;
+
+    --accent-color-dark: #36577c;
+    --accent-color-med: #5284bd;
+    --accent-color-light: #639ddf;
+}
+
+html {
+    font-family: "Roboto Flex", system-ui, sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+a {
+    color: var(--accent-color-med);
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--accent-color-light);
+}
+
+#page-header {
+    background-color: var(--primary-color-light);
+}
+.page-title {
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.navbar-link {
+    background-color: var(--accent-color-dark);
+    color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+.navbar-link:hover {
+    background-color: var(--accent-color-med);
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.navbar-link.current {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.gallery-list {
+    padding: 0;
+}
+
+.gallery-item {
+    background-color: var(--primary-color-light);
+    padding: 0px 20px 20px 20px;
+    border-radius: 20px;
+}
+
+.gallery-header {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#page-footer {
+    background-color: var(--primary-color-light);
+}

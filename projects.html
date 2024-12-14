@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="page-header">
         <div class="page-title-container">
             <h1 class="page-title">Syntrice.com</h1>
         </div>
-        <nav>
+        <nav class="nav-container">
             <ul class="navbar-list">
-                <li><a class="navbar-link" href="/">Home</a></li>
-                <li><a class="navbar-link selected" href="/projects">Projects</a></li>
+                <li><a class="navbar-link" href="/index.html">Home</a></li>
+                <li><a class="navbar-link current" href="/projects">Projects</a></li>
                 <li><a class="navbar-link" href="/music">Music</a></li>
             </ul>
         </nav>
@@ -23,14 +28,14 @@
             <h2 class="section-title">Projects</h1>
             <section id="projects-csdotnet" class="project-section">
                 <h3 class="section-title">C# / .NET</h2>
-                <ul class="project-list">
-                    <li>
-                        <h4 class="project-title">Mars Rover App</h4>
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                        <h4 class="gallery-header">Mars Rover App</h4>
                         <p class="project-description"></p>
                         <a href="https://github.com/Syntrice/mars-rover-app" class="link-repo">Repository</a>
                     </li>
-                    <li>
-                        <h4 class="project-title">Mono ASCII</h4>
+                    <li class="gallery-item">
+                        <h4 class="gallery-header">Mono ASCII</h4>
                         <p class="project-description"></p>
                         <a href="https://github.com/Syntrice/mono-ascii" class="link-repo">Repository</a>
                     </li>
@@ -38,27 +43,30 @@
             </section>
             <section id="projects-the-odin-project" class="project-section">
                 <h3 class="section-title">The Odin Project</h2>
-                <ul class="project-list">
-                    <li>
-                        <div class="project">
-                            <h4 class="project-title">Recipies Website</h3>
-                            <p class="project-description"></p>
-                            <a href="https://github.com/theodinproject-recipes/" class="link-repo">Repository</a>
-                            <a href="https://syntrice.com/theodinproject-recipes/" class="link-deployment">Deployment</a>
-                        </div>
-                        
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                        <h4 class="project-title">Recipies Website</h3>
+                        <p class="project-description"></p>
+                        <ul>
+                            <li><a href="https://github.com/theodinproject-recipes/" class="link-repo">Repository</a></li>
+                            <li><a href="https://syntrice.com/theodinproject-recipes/" class="link-deployment">Deployment</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <h4 class="project-title">Landing Page Example</h3>
+                    <li class="gallery-item">
+                        <h4 class="gallery-header">Landing Page Example</h3>
                         <p class="project-description"></p>    
-                        <a href="https://github.com/Syntrice/theodinproject-landing-page" class="link-repo">Repository</a>
-                        <a href="https://syntrice.com/theodinproject-landing-page" class="link-deployment">Deployment</a>
+                        <ul>
+                            <li><a href="https://github.com/Syntrice/theodinproject-landing-page" class="link-repo">Repository</a></li>
+                            <li><a href="https://syntrice.com/theodinproject-landing-page" class="link-deployment">Deployment</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <h4 class="project-title">Rock Paper Scissors Game</h3>
+                    <li class="gallery-item">
+                        <h4 class="gallery-header">Rock Paper Scissors Game</h3>
                         <p class="project-description"></p>    
-                        <a href="https://github.com/Syntrice/theodinproject-rock-paper-scissors" class="link-repo">Repository</a>
-                        <a href="https://syntrice.com/theodinproject-rock-paper-scissors" class="link-deployment">Deployment</a>
+                        <ul>
+                            <li><a href="https://github.com/Syntrice/theodinproject-rock-paper-scissors" class="link-repo">Repository</a></li>
+                            <li><a href="https://syntrice.com/theodinproject-rock-paper-scissors" class="link-deployment">Deployment</a></li>
+                        </ul>
                     </li>
                 </ul>
             </section>
