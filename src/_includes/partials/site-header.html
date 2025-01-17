@@ -1,0 +1,12 @@
+<header class="site-header">
+    <div class="site-banner">
+        <h1 class="site-title">Syntrice.com</h1>
+    </div>
+    <nav class="site-navbar">
+        <ul class="nav-list">
+            {%- for page in collections.page -%}
+            <li class="nav-item"><a class="nav-link" href="{{page.url}}">{{ page.data.title }}</a></li>
+            {%- endfor -%}
+        </ul>
+    </nav>
+</header>

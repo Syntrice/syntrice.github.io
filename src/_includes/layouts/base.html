@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} | Syntrice.com</title>
+
+</head>
+<body>
+    {% include "partials/site-header.html" %}
+    <main tabindex="-1" id="page-main">
+        {% block content %}
+        <p>No content found.</p>
+        {% endblock %}
+    </main>
+    {% include "partials/site-footer.html" %}
+</body>
+</html>
