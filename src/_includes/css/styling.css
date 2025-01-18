@@ -1,0 +1,61 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-foreground: rgb(204, 204, 204);
+        --color-background: rgb(40, 44, 52);
+        --color-accent: rgb(0, 149, 218);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-foreground: rgb(0, 0, 0);
+        --color-background: rgb(255, 255, 255);
+        --color-accent: rgb(0, 149, 218);
+    }
+}
+
+body {
+    font-size: 1.125rem;
+    color: var(--color-foreground);
+    background-color: var(--color-background);
+    font-family: monospace;
+    font-weight: normal;
+}
+
+#site-title {
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+#site-header {
+    border-bottom: solid 1px var(--color-foreground);
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.simple-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.simple-link:hover {
+    text-decoration: underline;
+}
+
+#site-footer {
+    border-top: solid 1px var(--color-foreground);
+}
+
+.unbulleted {
+    list-style-type: none;
+    padding: 0;
+}
+
+

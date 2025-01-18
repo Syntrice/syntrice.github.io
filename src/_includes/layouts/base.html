@@ -8,10 +8,12 @@
 </head>
 <body>
     {% include "partials/site-header.html" %}
-    <main tabindex="-1" id="page-main">
-        {% block content %}
-        <p>No content found.</p>
-        {% endblock %}
+    <main tabindex="-1" id="site-main">
+        <div class="site-wrapper">
+            {% block content %}
+            <p>No content found.</p>
+            {% endblock %}
+        </div>
     </main>
     {% include "partials/site-footer.html" %}
 </body>

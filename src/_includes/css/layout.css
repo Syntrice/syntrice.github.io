@@ -1,0 +1,54 @@
+
+/**--------------------------------------------
+ *               Page Layout
+ *---------------------------------------------**/
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.site-wrapper {
+    max-width: 900px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#site-header > .site-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#site-navbar .nav-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 20px;
+
+}
+
+#site-main {
+    flex-grow: 1;
+}
+
+#site-footer {
+    padding-top: 20px;
+}
+
+#site-footer .footer-top{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#site-footer .footer-top > *{
+    flex: 1 0 1;
+    flex-wrap: wrap;
+    margin-right: 50px;
+}
