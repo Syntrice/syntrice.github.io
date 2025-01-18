@@ -2,13 +2,9 @@
     <div class="footer-flex">
         {% if config.contact %}
         <div>
-            <ul>
+            <ul class="unbulleted">
                 {% if config.contact.name %}
                 <li>{{ config.contact.name }}</li>
-                {% endif %}
-        
-                {% if config.contact.email %}
-                <li><a href="mailto:{{ config.contact.email }}">{{ config.contact.email }}</a></li>
                 {% endif %}
                 {% if config.contact.location %}
                 <li>{{ config.contact.location }}</li>
@@ -18,12 +14,15 @@
         {% endif %}
         {% if config.links %}
         <div>
-            <ul>
+            <ul class="unbulleted">
+                {% if config.contact.email %}
+                <li><a href="mailto:{{ config.contact.email }}"><i class="fa-regular fa-envelope"></i> {{ config.contact.email }}</a></li>
+                {% endif %}
                 {% if config.links.github %}
-                <li><a href="{{ config.links.github}}">GitHub</a></li>
+                <li><a href="{{ config.links.github}}"><i class="fa-brands fa-square-github"></i> GitHub</a></li>
                 {% endif %}
                 {% if config.links.linkedIn %}
-                <li><a href="{{ config.links.linkedIn}}">LinkedIn</a></li>
+                <li><a href="{{ config.links.linkedIn}}"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
                 {% endif %}
             </ul>
         </div>
@@ -35,6 +34,6 @@
     </div>
 
     {% if config.copyright %}
-    <div class="footer-span"><p>{{ config.copyright | safe }}</p></div>
+    <div class="footer-span"><p class="copyright-text">{{ config.copyright | safe }}</p></div>
     {% endif %}
 </footer>

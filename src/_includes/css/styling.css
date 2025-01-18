@@ -36,6 +36,11 @@ a:hover {
     text-decoration: underline;
 }
 
+.unbulleted {
+    list-style-type: none;
+    padding-left: 0;
+}
+
 /**--------------------------------------------
  *               Specific
  *---------------------------------------------**/
@@ -45,7 +50,7 @@ a:hover {
  *------------------------**/
 
 #site-header {
-    border-bottom: 2px solid var(--color-foreground)
+    border-bottom: 2px solid var(--color-foreground);
 }
 
 .navbar-toggle {
@@ -63,7 +68,10 @@ a:hover {
  *    Footer
  *------------------------**/
 
- #site-footer {
-    border-top: 2px solid var(--color-foreground)
- }
+#site-footer {
+    border-top: 2px solid var(--color-foreground);
+}
 
+.copyright-text {
+    font-style: italic;
+}
