@@ -32,7 +32,7 @@ module.exports = async function (eleventyConfig) {
       },
 
       // configure base path for github pages purposes
-      pathPrefix: "/pages-test/",
+      pathPrefix: "",
       
       // Set to use nunjucks with our src files
       markdownTemplateEngine: 'njk',
