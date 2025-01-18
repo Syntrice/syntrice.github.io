@@ -1,0 +1,12 @@
+{
+    "links" : {
+        "linkedIn" : "https://www.linkedin.com/in/samuelmaughan/",
+        "github" : "https://github.com/Syntrice"
+    },
+    "contact" : {
+        "email" : "syntrice@protonmail.com",
+        "location" : "East Sussex"
+    },
+    "description" : "A personal site for my projects and music.",
+    "copyright" : "Copyright &copy 2025 Syntrice.com - All Rights Reserved."
+}

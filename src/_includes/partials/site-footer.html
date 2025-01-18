@@ -1,3 +1,32 @@
 <footer class="site-footer">
-    <p class="copyright-text">Copyright &copy 2025 Syntrice.com - All Rights Reserved.</p>
+    {% if config.links %}
+    <div>
+        <ul>
+            {% if config.links.github %}
+            <li><a href="{{ config.links.github}}">GitHub</a></li>
+            {% endif %}
+            {% if config.links.linkedIn %}
+            <li><a href="{{ config.links.linkedIn}}">LinkedIn</a></li>
+            {% endif %}
+        </ul>
+    </div>
+    {% endif %}
+
+    {% if config.contact %}
+    <div>
+        {% if config.contact.email %}<p><a href="mailto:{{ config.contact.email }}">{{ config.contact.email }}</a></p>{% endif %}
+        {% if config.contact.location %}<p>{{ config.contact.location }}</p>{% endif %}
+    </div>
+    {% endif %}
+
+    {% if config.description %}
+    <div>
+        <p>{{ config.description }}</p>
+    </div>
+    {% endif %}
+    {% if config.copyright %}
+    <div>
+        <p class="copyright-text">{{ config.copyright | safe }}</p>
+    </div>
+    {% endif %}
 </footer>
