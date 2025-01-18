@@ -1,3 +1,5 @@
+const CleanCSS = require("clean-css");
+
 module.exports = async function (eleventyConfig) {
     const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
     eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
@@ -14,6 +16,13 @@ module.exports = async function (eleventyConfig) {
         return page.url.slice(0, -1 * ".html".length);
       }
     });
+
+    // Add cssmin filter to clean css and minify
+    eleventyConfig.addFilter("cssmin", function (code) {
+      return new CleanCSS({}).minify(code).styles;
+    });
+
+    eleventyConfig.addPassthroughCopy('./src/assets/');
     
     return {
       dir: {
