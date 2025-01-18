@@ -1,0 +1,15 @@
+<header id="site-header" class="base-container">
+    <div class="site-title-container">
+        <h1 class="site-title">{{ config.title }}</h1>
+    </div>
+    <button class="navbar-toggle" onclick="toggleNavbar()">
+        <i class="fa fa-bars"></i>
+    </button>
+    <nav class="navbar" id="site-navbar">
+        <ul class="navbar-list">
+            {%- for page in collections.page -%}
+            <li class="navbar-item"><a class="navbar-link" href="{{page.url}}">{{ page.data.title }}</a></li>
+            {%- endfor -%}
+        </ul>
+    </nav>
+</header>

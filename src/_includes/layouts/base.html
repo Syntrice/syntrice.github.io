@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} | Syntrice.com</title>
+    <title>{{ title }} | {{ config.title }}</title>
     <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ea17386a30.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    {% include "partials/site-header.html" %}
-    <main tabindex="-1" id="site-main">
-        <div class="site-wrapper">
-            {% block content %}
-            <p>No content found.</p>
-            {% endblock %}
-        </div>
-    </main>
-    {% include "partials/site-footer.html" %}
+    <div class="content-wrapper">
+        {% include "components/header.html" %}
+        <main tabindex="-1" class="base-container" id="site-main">
+        {% block content %}
+        <p>No content found.</p>
+        {% endblock %}
+        </main>
+        {% include "components/footer.html" %}
+    </div>
+    <script src="/scripts/script.js"></script>
 </body>
 </html>

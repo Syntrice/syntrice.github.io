@@ -1,54 +1,110 @@
 
-/**--------------------------------------------
- *               Page Layout
- *---------------------------------------------**/
+/**----------------------
+ *    Base
+ *------------------------**/
 
-body {
+.content-wrapper {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    box-sizing: border-box;
-}
-
-.site-wrapper {
-    max-width: 900px; 
+    min-height: 100vh;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#site-header > .site-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#site-navbar .nav-list {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    gap: 20px;
-
 }
 
 #site-main {
-    flex-grow: 1;
+    flex: 1;
 }
 
-#site-footer {
-    padding-top: 20px;
+.base-container {
+    padding: 20px;
 }
 
-#site-footer .footer-top{
+
+ /**----------------------
+  *    Navbar
+  *------------------------**/
+
+#site-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.site-title {
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+}
+
+#site-navbar.hidden .navbar-list {
+    display: none;
+}
+
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+}
+
+.navbar-link {
+    padding: 10px;
+    text-align: right;
+    display: inline-block;
+}
+
+.navbar-toggle {
+    height: fit-content;
+    width: fit-content;
+    font-size: 1.5em;
+}
+
+@media screen and (min-width: 600px) {
+    .navbar-toggle {
+        display: none;
+    }
+
+    #site-navbar.hidden .navbar-list {
+        display: flex;
+    }    
+
+    .navbar {
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .navbar-list {
+        flex-direction: row;
+        gap: 25px;
+        align-items: end;
+    }
+}
+
+/**----------------------
+ *    Footer
+ *------------------------**/
+
+.footer-flex {
     display: flex;
     justify-content: left;
-    align-items: center;
+    padding-top: 10px;
     flex-wrap: wrap;
 }
 
-#site-footer .footer-top > *{
+.footer-flex > * {
+    margin-right: 25px;
     flex: 1 0 1;
-    flex-wrap: wrap;
-    margin-right: 50px;
+    
+}
+
+.footer-span {
+    width: 100%;
 }

@@ -23,6 +23,7 @@ module.exports = async function (eleventyConfig) {
     });
 
     eleventyConfig.addPassthroughCopy('./src/assets/');
+    eleventyConfig.addPassthroughCopy('./src/scripts/');
     
     return {
       dir: {

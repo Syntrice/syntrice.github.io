@@ -14,21 +14,17 @@
     }
 }
 
+/**--------------------------------------------
+ *               General
+ *---------------------------------------------**/
+
+html {
+    font-family: Open Sans, sans-serif;
+}
+
 body {
-    font-size: 1.125rem;
-    color: var(--color-foreground);
     background-color: var(--color-background);
-    font-family: monospace;
-    font-weight: normal;
-}
-
-#site-title {
-    font-size: 1.5em;
-    font-weight: lighter;
-}
-
-#site-header {
-    border-bottom: solid 1px var(--color-foreground);
+    color: var(--color-foreground);
 }
 
 a {
@@ -40,22 +36,34 @@ a:hover {
     text-decoration: underline;
 }
 
-.simple-link {
-    text-decoration: none;
-    color: inherit;
+/**--------------------------------------------
+ *               Specific
+ *---------------------------------------------**/
+
+/**----------------------
+ *    Header
+ *------------------------**/
+
+#site-header {
+    border-bottom: 2px solid var(--color-foreground)
 }
 
-.simple-link:hover {
-    text-decoration: underline;
+.navbar-toggle {
+    border: none;
+    background-color: transparent;
+    border-radius: 10px;
+    color: var(--color-foreground);
 }
 
-#site-footer {
-    border-top: solid 1px var(--color-foreground);
+.navbar-link {
+    color: var(--color-foreground);
 }
 
-.unbulleted {
-    list-style-type: none;
-    padding: 0;
-}
+/**----------------------
+ *    Footer
+ *------------------------**/
 
+ #site-footer {
+    border-top: 2px solid var(--color-foreground)
+ }
 
