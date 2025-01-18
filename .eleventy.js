@@ -24,7 +24,7 @@ module.exports = async function (eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy('./src/assets/');
     eleventyConfig.addPassthroughCopy('./src/scripts/');
-    eleventyConfig.addPassthroughCopy('./src/CNAME/');
+    eleventyConfig.addPassthroughCopy('./src/CNAME');
 
     
     return {
