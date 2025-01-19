@@ -111,6 +111,7 @@ body {
 .footer-flex {
     display: flex;
     justify-content: left;
+    align-items: baseline;
     padding-top: 10px;
     flex-wrap: wrap;
 }

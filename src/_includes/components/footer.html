@@ -1,5 +1,30 @@
 <footer class="base-container" id="site-footer">
     <div class="footer-flex">
+        {% if config.links %}
+        <div>
+            <ul class="icon-list">
+                {% if config.contact.email %}
+                <li>
+                    <i class="fa-regular fa-envelope icon"></i>
+                    <a href="mailto:{{ config.contact.email }}">{{ config.contact.email }}</a>
+                </li>
+                {% endif %}
+                {% if config.links.github %}
+                <li>
+                    <i class="fa-brands fa-square-github icon"></i>
+                    <a href="{{ config.links.github}}">GitHub</a>
+                </li>
+                {% endif %}
+                {% if config.links.linkedIn %}
+                <li>
+                    <i class="fa-brands fa-linkedin icon"></i>
+                    <a href="{{ config.links.linkedIn}}">LinkedIn</a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+        {% endif %}
+
         {% if config.contact %}
         <div>
             <ul class="unbulleted">
@@ -8,21 +33,6 @@
                 {% endif %}
                 {% if config.contact.location %}
                 <li>{{ config.contact.location }}</li>
-                {% endif %}
-            </ul>
-        </div>
-        {% endif %}
-        {% if config.links %}
-        <div>
-            <ul class="unbulleted">
-                {% if config.contact.email %}
-                <li><a href="mailto:{{ config.contact.email }}"><i class="fa-regular fa-envelope"></i> {{ config.contact.email }}</a></li>
-                {% endif %}
-                {% if config.links.github %}
-                <li><a href="{{ config.links.github}}"><i class="fa-brands fa-square-github"></i> GitHub</a></li>
-                {% endif %}
-                {% if config.links.linkedIn %}
-                <li><a href="{{ config.links.linkedIn}}"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
                 {% endif %}
             </ul>
         </div>

@@ -1,3 +1,7 @@
+/**--------------------------------------------
+ *               Theming
+ *---------------------------------------------**/
+
 @media (prefers-color-scheme: dark) {
     :root {
         --color-foreground: rgb(204, 204, 204);
@@ -41,13 +45,28 @@ a:hover {
     padding-left: 0;
 }
 
-/**--------------------------------------------
- *               Specific
- *---------------------------------------------**/
+.icon-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
 
-/**----------------------
- *    Header
- *------------------------**/
+.icon-list > li {
+    display: flex;
+    align-items: center;
+}
+
+.icon-list .icon {
+    font-size: 1.25em;
+    color: var(--color-foreground);
+    margin-right: 10px;
+}
+
+/**--------------------------------------------
+ *               Header
+ *---------------------------------------------**/
 
 #site-header {
     border-bottom: 2px solid var(--color-foreground);
@@ -64,9 +83,9 @@ a:hover {
     color: var(--color-foreground);
 }
 
-/**----------------------
- *    Footer
- *------------------------**/
+/**--------------------------------------------
+ *               Footer
+ *---------------------------------------------**/
 
 #site-footer {
     border-top: 2px solid var(--color-foreground);
