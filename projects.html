@@ -15,28 +15,53 @@
     <script src="https://kit.fontawesome.com/fcaa07b255.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="content-wrapper">
-        <header id="site-header" class="base-container">
+    
+    <header id="site-header" class="base-container">
     <div class="site-title-container">
         <h1 class="site-title">Syntrice.com</h1>
     </div>
     <button class="navbar-toggle" onclick="toggleNavbar()">
         <i class="fa fa-bars"></i>
     </button>
-    <nav class="navbar hidden" id="site-navbar">
-        <ul class="navbar-list"><li class="navbar-item"><a class="navbar-link" href="/">About Me</a></li><li class="navbar-item"><a class="navbar-link" href="/music">Music</a></li><li class="navbar-item"><a class="navbar-link" href="/projects">Projects</a></li></ul>
+    <nav class="navbar">
+        <ul class="navbar-list hidden" id="site-navbar-list"><li class="navbar-item"><a class="navbar-link" href="/">About Me</a></li><li class="navbar-item"><a class="navbar-link" href="/music">Music</a></li><li class="navbar-item"><a class="navbar-link" href="/projects">Projects</a></li></ul>
     </nav>
 </header>
 
-        <main tabindex="-1" class="base-container" id="site-main">
-        
+    <main tabindex="-1" class="base-container" id="site-main">
+    
 <h2>Projects</h2>
 <p>Coming soon!</p>
 
 
-        </main>
-        <footer class="base-container" id="site-footer">
+    </main>
+    <footer class="base-container" id="site-footer">
     <div class="footer-flex">
+        
+        <div>
+            <ul class="icon-list">
+                
+                <li>
+                    <i class="fa-regular fa-envelope icon"></i>
+                    <a href="mailto:syntrice@protonmail.com">syntrice@protonmail.com</a>
+                </li>
+                
+                
+                <li>
+                    <i class="fa-brands fa-square-github icon"></i>
+                    <a href="https://github.com/Syntrice">GitHub</a>
+                </li>
+                
+                
+                <li>
+                    <i class="fa-brands fa-linkedin icon"></i>
+                    <a href="https://www.linkedin.com/in/samuelmaughan/">LinkedIn</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
         
         <div>
             <ul class="unbulleted">
@@ -45,21 +70,6 @@
                 
                 
                 <li>East Sussex</li>
-                
-            </ul>
-        </div>
-        
-        
-        <div>
-            <ul class="unbulleted">
-                
-                <li><a href="mailto:syntrice@protonmail.com"><i class="fa-regular fa-envelope"></i> syntrice@protonmail.com</a></li>
-                
-                
-                <li><a href="https://github.com/Syntrice"><i class="fa-brands fa-square-github"></i> GitHub</a></li>
-                
-                
-                <li><a href="https://www.linkedin.com/in/samuelmaughan/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
                 
             </ul>
         </div>
@@ -74,7 +84,7 @@
     <div class="footer-span"><p class="copyright-text">Copyright &copy 2025 Syntrice.com - All Rights Reserved.</p></div>
     
 </footer>
-    </div>
+    
     <script src="/scripts/script.js"></script>
 </body>
 </html>
