@@ -5,8 +5,8 @@
     <button class="navbar-toggle" onclick="toggleNavbar()">
         <i class="fa fa-bars"></i>
     </button>
-    <nav class="navbar hidden" id="site-navbar">
-        <ul class="navbar-list">
+    <nav class="navbar">
+        <ul class="navbar-list hidden" id="site-navbar-list">
             {%- for page in collections.page -%}
             <li class="navbar-item"><a class="navbar-link" href="{{page.url}}">{{ page.data.title }}</a></li>
             {%- endfor -%}

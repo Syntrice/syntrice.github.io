@@ -15,15 +15,15 @@
     <script src="https://kit.fontawesome.com/fcaa07b255.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="content-wrapper">
-        {% include "components/header.html" %}
-        <main tabindex="-1" class="base-container" id="site-main">
-        {% block content %}
-        <p>No content found.</p>
-        {% endblock %}
-        </main>
-        {% include "components/footer.html" %}
-    </div>
+    
+    {% include "components/header.html" %}
+    <main tabindex="-1" class="base-container" id="site-main">
+    {% block content %}
+    <p>No content found.</p>
+    {% endblock %}
+    </main>
+    {% include "components/footer.html" %}
+    
     <script src="/scripts/script.js"></script>
 </body>
 </html>

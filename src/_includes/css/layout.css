@@ -1,9 +1,8 @@
+/**--------------------------------------------
+ *               Base
+ *---------------------------------------------**/
 
-/**----------------------
- *    Base
- *------------------------**/
-
-.content-wrapper {
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -20,77 +19,94 @@
     padding: 20px;
 }
 
-
- /**----------------------
-  *    Navbar
-  *------------------------**/
+/**--------------------------------------------
+ *               Header
+ *---------------------------------------------**/
 
 #site-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
 }
+
+/**----------------------
+ *    Title
+ *------------------------**/
 
 .site-title {
     margin: 0;
 }
 
-.navbar {
-    width: 100%;
+/**----------------------
+ *    Navbar Toggle
+ *------------------------**/
+
+ /* Hidden by default */
+.navbar-toggle {
+    display: none;
 }
 
-#site-navbar.hidden .navbar-list {
-    display: none;
+/**----------------------
+ *    Navbar
+ *------------------------**/
+
+.navbar {
+    display: flex;
 }
 
 .navbar-list {
     list-style-type: none;
     margin: 0;
-    padding: 0;
     display: flex;
-    flex-direction: column;
-    align-items: end;
-    gap: 10px;
+    gap: 25px;
 }
 
 .navbar-link {
     padding: 10px;
-    text-align: right;
     display: inline-block;
 }
 
-.navbar-toggle {
-    height: fit-content;
-    width: fit-content;
-    font-size: 1.5em;
-}
+/**----------------------
+ *    Small Screens
+ *------------------------**/
 
-@media screen and (min-width: 600px) {
-    .navbar-toggle {
+@media screen and (max-width: 600px) {
+    /* Hide list when set to hidden */
+    #site-navbar-list.hidden {
         display: none;
     }
 
-    #site-navbar.hidden .navbar-list {
-        display: flex;
-    }    
-
-    .navbar {
-        width: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
     .navbar-list {
-        flex-direction: row;
-        gap: 25px;
+        transition: all 0.5s;
+    }
+
+    /* Show the toggle button */
+    .navbar-toggle {
+        display: block;
+        height: fit-content;
+        width: fit-content;
+        font-size: 1.5em;
+    }
+
+    /* Navbar spans entire width so it jumps to newline */
+    .navbar {
+        width: 100%;
+    }
+
+    /* Navbar list is now a column */
+    .navbar-list {
+        width: 100%;
+        flex-direction: column;
         align-items: end;
+        margin-top: 10px;
+        gap: 10px;
     }
 }
 
-/**----------------------
- *    Footer
- *------------------------**/
+/**--------------------------------------------
+ *               Footer
+ *---------------------------------------------**/
 
 .footer-flex {
     display: flex;
@@ -102,7 +118,6 @@
 .footer-flex > * {
     margin-right: 25px;
     flex: 1 0 1;
-    
 }
 
 .footer-span {
