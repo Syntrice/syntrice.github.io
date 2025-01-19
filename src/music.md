@@ -1,7 +1,7 @@
 ---
-layout: 'layouts/page.html'
+layout: 'layouts/music.html'
 title: 'Music'
 tags: 'page'
 ---
 
-Coming soon!
+Here you can find some of my compositions:

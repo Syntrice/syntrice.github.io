@@ -1,0 +1,18 @@
+{% extends "layouts/base.html" %} 
+{% block content %}
+<h2>{{ title }}</h2>
+{% if soundcloud %}
+<div>
+    {{ soundcloud | safe}}
+</div>
+{% endif %}
+
+{% if score %}
+<div>
+    <a class="link-button" href="{{ score }}">View Score</a>
+</div>
+{% endif %}
+
+{{ content | safe }}
+
+{% endblock %}
