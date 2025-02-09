@@ -1,14 +1,16 @@
 ---
 import NavLink from "./NavLink.astro"
-import navLinks from "@data/navlinks.json"
+import { getCollection } from 'astro:content';
+
+const navlinks = await getCollection('navlinks');
 const currentPath = new URL(Astro.request.url).pathname;
 
 ---
 
 <nav>
-    {navLinks.map(obj => {
+    {navlinks.map(obj => {
         return (
-            <NavLink href={obj.href} isActive={obj.href === currentPath ? true : false}>{obj.title}</NavLink>
+            <NavLink href={obj.data.href} isActive={obj.data.href === currentPath ? true : false}>{obj.data.title}</NavLink>
         )
     })}
 </nav>
