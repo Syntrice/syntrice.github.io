@@ -1,11 +1,14 @@
 ---
 import Wrapper from "@components/SiteWrapper.astro";
 import Nav from "./nav/Nav.astro";
+import SiteHeaderBrand from "./SiteHeaderBrand.astro";
 ---
 
 <header class="shadow-2xl">
     <Wrapper>
-        <h1>My Personal Site</h1>
-        <Nav/>
+        <div class="flex justify-between">
+            <SiteHeaderBrand/>
+            <Nav/>
+        </div>
     </Wrapper>
 </header>

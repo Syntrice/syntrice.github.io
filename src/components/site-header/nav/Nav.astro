@@ -4,13 +4,14 @@ import { getCollection } from 'astro:content';
 
 const navlinks = await getCollection('navlinks');
 const currentPath = new URL(Astro.request.url).pathname;
-
 ---
 
 <nav>
-    {navlinks.map(obj => {
-        return (
+    {navlinks && (
+        <ul class="flex gap-5">
+            {navlinks.map(obj => (
             <NavLink href={obj.data.href} isActive={obj.data.href === currentPath ? true : false}>{obj.data.title}</NavLink>
-        )
-    })}
+            ))}
+        </ul>
+    )}
 </nav>
