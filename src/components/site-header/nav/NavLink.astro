@@ -1,0 +1,7 @@
+---
+const { href, isActive } = Astro.props;
+---
+
+<a href={href} class={isActive ? "underline" : ""}>
+    <slot/>
+</a>
