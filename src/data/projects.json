@@ -1,1 +1,17 @@
-[]
+[
+    {
+        "id": 1,
+        "title": "Syntrice Record Shop",
+        "repoLink": "https://github.com/Syntrice/syntrice-record-shop"
+    },
+    {
+        "id": 2,
+        "title": "Syntrice Contact Manager",
+        "repoLink": "https://github.com/Syntrice/syntrice-contact-manager"
+    },
+    {
+        "id": 3,
+        "title": "Spreeview (Group Project)",
+        "repoLink": "https://github.com/nc-team-inertia/spreeview"
+    }
+]

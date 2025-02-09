@@ -7,11 +7,16 @@ import { glob, file } from 'astro/loaders';
 // 3. Define your collection(s)
 
 const projects = defineCollection({
-    loader: file("src/data/compositions.json")
+    loader: file("src/data/projects.json"),
+    schema: z.object({
+        id: z.number(),
+        title: z.string(),
+        repoLink: z.string(),
+    }),
 })
 
 const compositions = defineCollection({
-    loader: file("src/data/projects.json")
+    loader: file("src/data/compositions.json")
 })
 
 const navlinks = defineCollection({
