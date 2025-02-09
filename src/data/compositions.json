@@ -1,1 +1,30 @@
-[]
+[
+    {
+        "id": 1,
+        "title": "Aquarius"
+    },
+    {
+        "id": 2,
+        "title": "Autogenous"
+    },
+    {
+        "id": 3,
+        "title": "From the Void"
+    },
+    {
+        "id": 4,
+        "title": "Plange Quasi Virgo"
+    },
+    {
+        "id": 5,
+        "title": "Sinusoidal Voices"
+    },
+    {
+        "id": 6,
+        "title": "Symphony in G Minor"
+    },
+    {
+        "id": 7,
+        "title": "Unification"
+    }
+]

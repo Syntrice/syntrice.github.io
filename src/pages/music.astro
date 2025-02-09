@@ -1,8 +1,17 @@
 ---
 import Layout from '@layouts/MainLayout.astro';
-const pageTitle = "Music"
+import { getCollection } from 'astro:content';
+
+const compositions = await getCollection('compositions');
+
 ---
 
-<Layout pageTitle={pageTitle}>
-	<h1 class="text-3xl">Hello World!</h1>
+<Layout pageTitle="Music">
+	{compositions && (
+		<ul>
+			{compositions.map(obj => (
+				<li>{obj.data.title}</li>
+			))}
+		</ul>
+	)}
 </Layout>

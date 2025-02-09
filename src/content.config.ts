@@ -16,7 +16,11 @@ const projects = defineCollection({
 })
 
 const compositions = defineCollection({
-    loader: file("src/data/compositions.json")
+    loader: file("src/data/compositions.json"),
+    schema: z.object({
+        id: z.number(),
+        title: z.string(),
+    }),
 })
 
 const navlinks = defineCollection({
