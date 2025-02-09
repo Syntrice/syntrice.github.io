@@ -1,4 +1,7 @@
 ---
+import SiteFooter from "../components/SiteFooter.astro"
+import SiteHeader from "../components/SiteHeader.astro"
+import SiteWrapper from "../components/SiteWrapper.astro"
 import "../styles/global.css"
 ---
 
@@ -12,6 +15,10 @@ import "../styles/global.css"
 		<title>Document</title>
 	</head>
 	<body>
-		<slot />
+		<SiteHeader/>
+		<SiteWrapper>
+			<slot />
+		</SiteWrapper>
+		<SiteFooter/>
 	</body>
 </html>
