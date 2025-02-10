@@ -1,9 +1,44 @@
 ---
 import Wrapper from "@components/SiteWrapper.astro";
+import site from "@data/site.json"
+import FooterLink from "./FooterLink.astro";
+import { Icon } from 'astro-icon/components'
 ---
 
 <footer>
+    
+</footer>
+
+<footer class="text-lg dark:bg-black/10 bg-black/5 dark:text-slate-200 p-5">
     <Wrapper>
-        <small>Copyright &copy; 2025</small>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div> 
+                <ul>
+                    <li>
+                        <FooterLink href={site.contact.email}><Icon class="inline" name="fa6-regular:envelope"/> {site.contact.email}</FooterLink>
+                    </li>
+                    <li>
+                        <FooterLink href={site.contact.links.github}>
+                            <Icon class="inline" name="fa6-brands:square-github"/> GitHub</FooterLink>
+                    </li>
+                    <li>
+                        <FooterLink href={site.contact.links.linkedIn}>
+                            <Icon class="inline" name="fa6-brands:linkedin"/> LinkedIn</FooterLink>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>{site.contact.name}</li>
+                    <li>{site.contact.location}</li>
+                </ul>
+            </div>
+            <div>
+                <p>{site.description}</p>
+            </div>
+        </div>
+        <div class="mt-7"> 
+            <p>{site.copyright}</p>
+        </div>
     </Wrapper>
 </footer>
