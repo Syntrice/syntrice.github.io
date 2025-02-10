@@ -1,30 +1,55 @@
 [
     {
         "id": 1,
-        "title": "Aquarius"
+        "title": "Aquarius",
+        "description": "A freely-composed work for large orchestra.",
+        "scoreLink": "/resources/scores/aquarius.pdf",
+        "soundcloudEmbed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1982477859&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
     },
     {
         "id": 2,
-        "title": "Autogenous"
+        "title": "Autogenous",
+        "description": "An algorithmic composition written in Supercollider, based on euclidean rhythms and markov chains.",
+        "soundcloudEmbed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1982479155&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
     },
     {
         "id": 3,
-        "title": "From the Void"
+        "title": "From the Void",
+        "description": "An ambient, algorithmic, surround-sound piece written in Supercollider. It is inspired by the concept of transition, and Arvo Pärt's tintinnabuli technique.",
+        "soundcloudEmbed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1982479883&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
     },
     {
         "id": 4,
-        "title": "Plange Quasi Virgo"
+        "title": "Plange Quasi Virgo",
+        "scoreLink": "/resources/scores/plange-quasi-virgo.pdf",
+        "description": "A procedural composition for SATB, highly inspired by the work of Arvo Pärt.",
+        "soundcloudEmbed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1982480491&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
     },
     {
         "id": 5,
-        "title": "Sinusoidal Voices"
+        "title": "Sinusoidal Voices",
+        "description": "An electroacoustic piece constructed using simple sine tones and modulation.",
+        "soundcloudEmbed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1982485363&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
     },
     {
         "id": 6,
-        "title": "Symphony in G Minor"
+        "title": "Symphony in G Minor",
+        "scoreLink": "/resources/scores/symphony-in-g-minor.pdf",
+        "description": "An orchestral work inspired by 19th century composers such as Brahms and Dvorak.",
+        "soundcloudEmbed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1982491827&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
     },
     {
         "id": 7,
-        "title": "Unification"
+        "title": "Unification",
+        "scoreLink": "/resources/scores/unification.pdf",
+        "description": "An experimental piece for string quartet, exploring transition from movement to stasis.",
+        "soundcloudEmbed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1982489259&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+    },
+    {
+        "id": 8,
+        "title": "Reliquary",
+        "scoreLink": "/resources/scores/reliquary.pdf",
+        "description": "A set of three minitures, each exploring a different register and texture possible on the Piano.",
+        "soundcloudEmbed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1982487191&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
     }
 ]
