@@ -18,13 +18,19 @@ const { pageTitle } = Astro.props
 		<!-- Get light and dark system preference and update local storage -->
 		<script is:inline>
 			function applyTheme() {
-				document.documentElement.classList.toggle(
-                "dark",
-                localStorage.currentTheme === "dark" ||
-                    (!("theme" in localStorage) &&
-                        window.matchMedia("(prefers-color-scheme: dark)")
-                            .matches)
-            	);
+				if (!localStorage.currentTheme) {
+
+					if (window.matchMedia("(prefers-color-scheme: dark")) {
+						localStorage.currentTheme = "dark"
+					}
+					else {
+						localStorage.currentTheme = "light"
+					}
+				}
+
+				localStorage.currentTheme === 'dark'
+				? document.documentElement.classList.add("dark")
+				: document.documentElement.classList.remove("dark");
 			}
 
 			// Add to astro swap event listener, to work with routing
@@ -40,8 +46,9 @@ const { pageTitle } = Astro.props
 		
 			<main class="mb-auto">
 				<SiteWrapper>
-					<slot />
-
+					<div class="mt-5 mb-5">
+						<slot />
+					</div>
 				</SiteWrapper>
 			</main>
 		<SiteFooter/>
