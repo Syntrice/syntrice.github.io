@@ -3,18 +3,21 @@
         "id": 1,
         "title": "Syntrice Record Shop",
         "repoLink": "https://github.com/Syntrice/syntrice-record-shop",
-        "category": "full-stack"
+        "category": "full-stack",
+        "description": "A RESTful API and Web App for a fictional record shop business."
     },
     {
         "id": 2,
         "title": "Syntrice Contact Manager",
         "repoLink": "https://github.com/Syntrice/syntrice-contact-manager",
-        "category": "backend"
+        "category": "backend",
+        "description": "A console-based application for managing contact details."
     },
     {
         "id": 3,
         "title": "Spreeview (Group Project)",
         "repoLink": "https://github.com/nc-team-inertia/spreeview",
-        "category": "full-stack"
+        "category": "full-stack",
+        "description": "A social networking review website for TV Shows."
     }
 ]

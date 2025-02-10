@@ -12,6 +12,8 @@ const projects = defineCollection({
         id: z.number(),
         title: z.string(),
         repoLink: z.string(),
+        category: z.string(),
+        description: z.string(),
     }),
 })
 
