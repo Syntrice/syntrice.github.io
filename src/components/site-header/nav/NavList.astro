@@ -1,0 +1,24 @@
+---
+import DarkToggle from "./DarkToggle.astro";
+import NavLink from "./NavLink.astro"
+import { getCollection } from 'astro:content';
+
+const { isVertical, id } = Astro.props;
+
+const navlinks = await getCollection('navlinks');
+const currentPath = new URL(Astro.request.url).pathname;
+
+const className = isVertical ? "grow flex gap-6 flex-col items-end mt-5 hidden md:hidden" : "grow flex justify-end align-middle gap-6 max-md:hidden"
+
+---
+
+
+<nav id={id}>
+    
+        <ul class={className}>
+            {navlinks.map(obj => (
+            <li class=""><NavLink href={obj.data.href} isActive={obj.data.href === currentPath ? true : false}>{obj.data.title}</NavLink></li>
+            ))}
+            <li class="flex"><DarkToggle/></li>
+        </ul>
+</nav>

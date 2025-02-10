@@ -1,14 +1,17 @@
 ---
 import Wrapper from "@components/SiteWrapper.astro";
-import Nav from "./nav/Nav.astro";
+import NavList from "./nav/NavList.astro";
 import SiteHeaderBrand from "./SiteHeaderBrand.astro";
+import NavToggle from "./nav/NavToggle.astro";
 ---
 
-<header class="shadow-2xl">
+<header class="bg-white dark:bg-slate-700 dark:text-slate-200 p-5 shadow-2xl">
     <Wrapper>
-        <div class="flex justify-between">
+        <div class="flex justify-between gap-6">
             <SiteHeaderBrand/>
-            <Nav/>
+            <NavList/>
+            <NavToggle/>
         </div>
+        <NavList isVertical=true/>
     </Wrapper>
 </header>
