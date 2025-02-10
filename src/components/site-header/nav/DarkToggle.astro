@@ -31,3 +31,26 @@
         />
     </svg>
 </button>
+
+
+<script>
+    
+    // Add to astro page load listener, to work with routing
+    document.addEventListener('astro:page-load', () => {
+
+        const darkmodeToggles = document.querySelectorAll(".darkmodeToggle");
+
+        darkmodeToggles.forEach((toggle) => {
+            toggle.addEventListener("click", () => {
+                if (localStorage.currentTheme === "light") {
+                    console.log("Toggling dark mode");
+                    localStorage.currentTheme = "dark";    
+                } else {
+                    console.log("Toggling light mode");
+                    localStorage.currentTheme = "light";
+                }
+                document.documentElement.classList.toggle("dark");
+            });
+        });
+    });
+</script>

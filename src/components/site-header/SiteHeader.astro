@@ -5,13 +5,13 @@ import SiteHeaderBrand from "./SiteHeaderBrand.astro";
 import NavToggle from "./nav/NavToggle.astro";
 ---
 
-<header class="bg-white dark:bg-slate-700 dark:text-slate-200 p-5 shadow-2xl">
+<header class="bg-white dark:bg-slate-700 dark:text-slate-200 shadow-2xl">
     <Wrapper>
         <div class="flex justify-between gap-6">
             <SiteHeaderBrand/>
             <NavList/>
             <NavToggle/>
         </div>
-        <NavList isVertical=true/>
+        <NavList id="navListMobile" isVertical=true/>
     </Wrapper>
 </header>

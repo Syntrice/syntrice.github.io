@@ -15,14 +15,35 @@ const { pageTitle } = Astro.props
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<ClientRouter />
+		<!-- Get light and dark system preference and update local storage -->
+		<script is:inline>
+			function applyTheme() {
+				document.documentElement.classList.toggle(
+                "dark",
+                localStorage.currentTheme === "dark" ||
+                    (!("theme" in localStorage) &&
+                        window.matchMedia("(prefers-color-scheme: dark)")
+                            .matches)
+            	);
+			}
+
+			// Add to astro swap event listener, to work with routing
+			// and prevent flashing on page load
+			document.addEventListener('astro:after-swap', applyTheme);
+			applyTheme();
+        </script>
 		<meta name="generator" content={Astro.generator} />
 		<title>My Personal Site | { pageTitle }</title>
 	</head>
-	<body>
+	<body class="dark:bg-slate-700 dark:text-slate-200 flex flex-col h-screen justify-between">
 		<SiteHeader/>
-		<SiteWrapper>
-			<slot />
-		</SiteWrapper>
+		
+			<main class="mb-auto">
+				<SiteWrapper>
+					<slot />
+
+				</SiteWrapper>
+			</main>
 		<SiteFooter/>
 	</body>
 </html>

@@ -13,12 +13,11 @@ const className = isVertical ? "grow flex gap-6 flex-col items-end mt-5 hidden m
 ---
 
 
-<nav id={id}>
-    
-        <ul class={className}>
-            {navlinks.map(obj => (
-            <li class=""><NavLink href={obj.data.href} isActive={obj.data.href === currentPath ? true : false}>{obj.data.title}</NavLink></li>
-            ))}
-            <li class="flex"><DarkToggle/></li>
-        </ul>
+<nav>
+    <ul id={id} class={className}>
+        {navlinks.map(obj => (
+        <li class=""><NavLink href={obj.data.href} isActive={obj.data.href === currentPath ? true : false}>{obj.data.title}</NavLink></li>
+        ))}
+        <li class="flex"><DarkToggle/></li>
+    </ul>
 </nav>
