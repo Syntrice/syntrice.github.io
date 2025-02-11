@@ -11,7 +11,7 @@ import { Icon } from 'astro-icon/components'
             <div> 
                 <ul>
                     <li>
-                        <FooterLink href={site.contact.email}><Icon class="inline" name="fa6-regular:envelope"/> {site.contact.email}</FooterLink>
+                        <FooterLink href={"mailto:" + site.contact.email}><Icon class="inline" name="fa6-regular:envelope"/> {site.contact.email}</FooterLink>
                     </li>
                     <li>
                         <FooterLink href={site.contact.links.github}>

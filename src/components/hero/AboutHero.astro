@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import profileImage from "@images/profile-img.jpg"
 import SiteWrapper from '@components/SiteWrapper.astro';
 import { Icon } from 'astro-icon/components'
-
+import site from "@data/site.json"
 
 ---
 
@@ -20,16 +20,16 @@ import { Icon } from 'astro-icon/components'
                 </p>
 
                 <div class="flex gap-5">
-                    <a class="button shrink-0" href="https://github.com/Syntrice">
+                    <a class="button shrink-0" href={site.contact.links.github}>
                         <Icon class="icon" name="fa6-brands:square-github"/>
                         GitHub
                     </a>
-                    <a class="button shrink-0" href="https://github.com/Syntrice">
+                    <a class="button shrink-0" href={site.contact.links.linkedIn}>
                         <Icon class="icon" name="fa6-brands:linkedin"/>
                         LinkedIn
                     </a>
-                    <a class="button shrink-0" href="https://github.com/Syntrice">
-                        <Icon class="icon" name="fa6-brands:square-github"/>
+                    <a class="button shrink-0" href={"mailto:" + site.contact.email}>
+                        <Icon class="icon" name="fa6-regular:envelope"/>
                         Email
                     </a>
                 </div>
