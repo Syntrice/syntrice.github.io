@@ -11,8 +11,8 @@ import { Icon } from 'astro-icon/components'
         <p class="mb-5">{composition.data.description}</p>
         
         { composition.data.scoreLink && 
-            <a class="hover:text-blue-400 transition-colors" href={composition.data.scoreLink}>
-                <Icon class="inline align-middle relative bottom-0.5" name="heroicons:document"/>
+            <a class="button" href={composition.data.scoreLink}>
+                <Icon class="icon" name="heroicons:document"/>
                 Score</a> 
         }
     </div>

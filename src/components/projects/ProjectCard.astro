@@ -8,7 +8,7 @@ import { Icon } from 'astro-icon/components'
     <p class="mb-5 text-2xl font-bold"><Icon class="inline align-middle relative bottom-0.5" name={project.data.icon}></Icon> {project.data.title}</p>
     <hr class="mb-2">
     <p class="mb-5">{project.data.description}</p>
-    <a class="hover:text-blue-400 transition-colors" href={project.data.repoLink}>
-        <Icon class="inline align-middle relative bottom-0.5" name="fa6-brands:square-github"/>
+    <a class="button" href={project.data.repoLink}>
+        <Icon class="icon" name="fa6-brands:square-github"/>
         GitHub</a>
 </div>
