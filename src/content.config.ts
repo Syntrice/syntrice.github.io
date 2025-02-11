@@ -14,6 +14,7 @@ const projects = defineCollection({
         repoLink: z.string(),
         category: z.string(),
         description: z.string(),
+        icon: z.string().optional()
     }),
 })
 
@@ -22,6 +23,9 @@ const compositions = defineCollection({
     schema: z.object({
         id: z.number(),
         title: z.string(),
+        description: z.string(),
+        scoreLink: z.string().optional(),
+        soundcloudEmbed: z.string().optional()
     }),
 })
 

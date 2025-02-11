@@ -1,4 +1,5 @@
 ---
+import CompositionCard from '@components/compositions/CompositionCard.astro';
 import Layout from '@layouts/MainLayout.astro';
 import { getCollection } from 'astro:content';
 
@@ -8,9 +9,11 @@ const compositions = await getCollection('compositions');
 
 <Layout pageTitle="Music">
 	{compositions && (
-		<ul>
+		<ul class="flex flex-col gap-5">
 			{compositions.map(obj => (
-				<li>{obj.data.title}</li>
+				<li>
+					<CompositionCard composition={obj}/>
+				</li>
 			))}
 		</ul>
 	)}

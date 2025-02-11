@@ -1,0 +1,22 @@
+---
+const { composition: composition } = Astro.props;
+import { Icon } from 'astro-icon/components'
+
+---
+
+<div class="p-5 dark:bg-black/10 bg-black/5 shadow rounded-2xl flex gap-10">
+    <div class="row-start-1 grow shrink basis-0">
+        <p class="mb-5 text-2xl font-bold"><Icon class="inline align-middle relative bottom-0.5" name="heroicons:musical-note"></Icon> {composition.data.title}</p>
+        <hr class="mb-2">
+        <p class="mb-5">{composition.data.description}</p>
+        
+        { composition.data.scoreLink && 
+            <a class="hover:text-blue-400 transition-colors" href={composition.data.scoreLink}>
+                <Icon class="inline align-middle relative bottom-0.5" name="heroicons:document"/>
+                Score</a> 
+        }
+    </div>
+    <div class="grow shrink basis-0 flex items-center justify-center">
+        <iframe width=100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src={composition.data.soundcloudEmbed}></iframe>
+    </div>
+</div>
