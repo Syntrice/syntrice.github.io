@@ -1,5 +1,6 @@
 ---
 import ProjectCard from '@components/projects/ProjectCard.astro';
+import SiteWrapper from '@components/SiteWrapper.astro';
 import Layout from '@layouts/MainLayout.astro';
 import { getCollection } from 'astro:content';
 
@@ -8,14 +9,15 @@ const projects = await getCollection('projects');
 ---
 
 <Layout pageTitle="Projects">
-	{projects && (
-		<ul class="flex flex-col gap-5">
-			{projects.map(obj => (
-				<li>
-					
-				</li>
-				<ProjectCard project={obj}/>
-			))}
-		</ul>
-	)}
+	<SiteWrapper>
+		{projects && (
+			<ul class="flex flex-col gap-5 my-5">
+				{projects.map(obj => (
+					<li>
+						<ProjectCard project={obj}/>
+					</li>
+				))}
+			</ul>
+		)}
+	</SiteWrapper>
 </Layout>

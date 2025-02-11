@@ -12,7 +12,7 @@
       "@pages/*": ["src/pages/*"],
       "@data/*": ["src/data/*"],
       "@scripts/*": ["src/scripts/*"],
-
+      "@images/*": ["src/images/*"]
     }
   }
 }

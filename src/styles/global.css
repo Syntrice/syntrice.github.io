@@ -4,3 +4,12 @@
 body {
     font-family: 'Inter Variable', sans-serif;
   }
+
+.button {
+  @apply inline-block p-2 hover:bg-black/10 rounded-md;
+}
+
+.icon {
+  @apply inline relative bottom-0.5;
+
+}

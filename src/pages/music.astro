@@ -1,5 +1,7 @@
 ---
 import CompositionCard from '@components/compositions/CompositionCard.astro';
+import AboutHero from '@components/hero/AboutHero.astro';
+import SiteWrapper from '@components/SiteWrapper.astro';
 import Layout from '@layouts/MainLayout.astro';
 import { getCollection } from 'astro:content';
 
@@ -8,13 +10,15 @@ const compositions = await getCollection('compositions');
 ---
 
 <Layout pageTitle="Music">
-	{compositions && (
-		<ul class="flex flex-col gap-5">
-			{compositions.map(obj => (
-				<li>
-					<CompositionCard composition={obj}/>
-				</li>
-			))}
-		</ul>
-	)}
+	<SiteWrapper>
+		{compositions && (
+			<ul class="flex flex-col gap-5 my-5">
+				{compositions.map(obj => (
+					<li>
+						<CompositionCard composition={obj}/>
+					</li>
+				))}
+			</ul>
+		)}
+	</SiteWrapper>
 </Layout>

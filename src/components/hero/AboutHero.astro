@@ -1,0 +1,41 @@
+---
+import { Image } from 'astro:assets';
+import profileImage from "@images/profile-img.jpg"
+import SiteWrapper from '@components/SiteWrapper.astro';
+import { Icon } from 'astro-icon/components'
+
+
+---
+
+<div class="bg-black/10 rounded-2xl">
+    <SiteWrapper>
+        <div class="flex justify-between p-5 flex-wrap gap-5">
+            <div class="grow basis-0 min-w-[250px] flex flex-col gap-5 justify-between">
+                <h1 class="text-4xl">Sam Maughan</h1>
+                <p>  
+                    Junior Software Developer and Musician
+                </p>
+                <p>
+                    Codes in C#, Python and JavaScript
+                </p>
+
+                <div class="flex gap-5">
+                    <a class="button shrink-0" href="https://github.com/Syntrice">
+                        <Icon class="icon" name="fa6-brands:square-github"/>
+                        GitHub
+                    </a>
+                    <a class="button shrink-0" href="https://github.com/Syntrice">
+                        <Icon class="icon" name="fa6-brands:linkedin"/>
+                        LinkedIn
+                    </a>
+                    <a class="button shrink-0" href="https://github.com/Syntrice">
+                        <Icon class="icon" name="fa6-brands:square-github"/>
+                        Email
+                    </a>
+                </div>
+            </div>
+            
+            <Image width={200} class="rounded-2xl" src={profileImage} alt="A profile image"/>
+        </div>
+    </SiteWrapper>
+</div>
