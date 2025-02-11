@@ -11,6 +11,9 @@ const projects = await getCollection('projects');
 	{projects && (
 		<ul class="flex flex-col gap-5">
 			{projects.map(obj => (
+				<li>
+					
+				</li>
 				<ProjectCard project={obj}/>
 			))}
 		</ul>
