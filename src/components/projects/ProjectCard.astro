@@ -1,12 +1,20 @@
 ---
 const { project } = Astro.props;
 import { Icon } from 'astro-icon/components'
+import { Image } from 'astro:assets';
 
 ---
 
 <div class="p-5 dark:bg-black/10 bg-black/5 shadow rounded-2xl">
     <p class="mb-5 text-2xl font-bold"><Icon class="inline align-middle relative bottom-0.5" name={project.data.icon}></Icon> {project.data.title}</p>
     <hr class="mb-2">
+    
+    { project.data.imgPath && 
+        <a href={project.data.repoLink}>
+            <img class="my-5 rounded-2xl" src={project.data.imgPath} width="500">
+        </a> 
+    }
+    
     <p class="mb-5">{project.data.description}</p>
     <a class="button" href={project.data.repoLink}>
         <Icon class="icon" name="fa6-brands:square-github"/>

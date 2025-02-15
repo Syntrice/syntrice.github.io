@@ -5,7 +5,8 @@
         "repoLink": "https://github.com/Syntrice/syntrice-record-shop",
         "category": "full-stack",
         "description": "A RESTful API and Web App for a fictional record shop business.",
-        "icon": "fa6-solid:record-vinyl"
+        "icon": "fa6-solid:record-vinyl",
+        "imgPath": "/assets/project-images/syntrice-record-shop.gif"
     },
     {
         "id": 2,
@@ -13,7 +14,9 @@
         "repoLink": "https://github.com/Syntrice/syntrice-contact-manager",
         "category": "backend",
         "description": "A console-based application for managing contact details.",
-        "icon": "fa6-regular:address-card"
+        "icon": "fa6-regular:address-card",
+        "imgPath": "/assets/project-images/syntrice-contact-manager.gif"
+
     },
     {
         "id": 3,
@@ -21,6 +24,16 @@
         "repoLink": "https://github.com/nc-team-inertia/spreeview",
         "category": "full-stack",
         "description": "A social networking review website for TV Shows.",
-        "icon": "heroicons:film-16-solid"
+        "icon": "heroicons:film-16-solid",
+        "imgPath": "/assets/project-images/spreeview.gif"
+
+    },
+    {
+        "id": 4,
+        "title": "Syntrice.com (this site)",
+        "repoLink": "https://github.com/Syntrice/syntrice.github.io",
+        "category": "front-end",
+        "description": "A static site built using the Astro JavaScript Framework.",
+        "icon": "heroicons:globe-alt"
     }
 ]
