@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": 2,
         "title": "Syntrice Record Shop",
         "repoLink": "https://github.com/Syntrice/syntrice-record-shop",
         "category": "full-stack",
@@ -9,24 +9,31 @@
         "imgPath": "/assets/project-images/syntrice-record-shop.gif"
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "Syntrice Contact Manager",
         "repoLink": "https://github.com/Syntrice/syntrice-contact-manager",
         "category": "backend",
         "description": "A console-based application for managing contact details.",
         "icon": "fa6-regular:address-card",
         "imgPath": "/assets/project-images/syntrice-contact-manager.gif"
-
     },
     {
-        "id": 3,
+        "id": 1,
         "title": "Spreeview (Group Project)",
         "repoLink": "https://github.com/nc-team-inertia/spreeview",
         "category": "full-stack",
         "description": "A social networking review website for TV Shows.",
         "icon": "heroicons:film-16-solid",
         "imgPath": "/assets/project-images/spreeview.gif"
-
+    },
+    {
+        "id": 1,
+        "title": "Spreeview (Group Project)",
+        "repoLink": "https://github.com/nc-team-inertia/spreeview",
+        "category": "full-stack",
+        "description": "A social networking review website for TV Shows.",
+        "icon": "heroicons:film-16-solid",
+        "imgPath": "/assets/project-images/spreeview.gif"
     },
     {
         "id": 4,

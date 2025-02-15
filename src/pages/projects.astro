@@ -12,7 +12,7 @@ const projects = await getCollection('projects');
 	<SiteWrapper>
 		{projects && (
 			<ul class="flex flex-col gap-5 my-5">
-				{projects.map(obj => (
+				{projects.sort((a, b) => a.data.id - b.data.id).map(obj => (
 					<li>
 						<ProjectCard project={obj}/>
 					</li>
