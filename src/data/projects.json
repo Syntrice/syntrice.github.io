@@ -27,15 +27,6 @@
         "imgPath": "/assets/project-images/spreeview.gif"
     },
     {
-        "id": 1,
-        "title": "Spreeview (Group Project)",
-        "repoLink": "https://github.com/nc-team-inertia/spreeview",
-        "category": "full-stack",
-        "description": "A social networking review website for TV Shows.",
-        "icon": "heroicons:film-16-solid",
-        "imgPath": "/assets/project-images/spreeview.gif"
-    },
-    {
         "id": 4,
         "title": "Syntrice.com (this site)",
         "repoLink": "https://github.com/Syntrice/syntrice.github.io",
