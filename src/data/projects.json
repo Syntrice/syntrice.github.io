@@ -78,6 +78,7 @@
         "icon": "fa6-solid:burger",
         "imgPath": "/assets/project-images/chef-bot.png",
         "technologies": [
+            "Vite",
             "React",
             "Tailwind CSS",
             "Netlify",
