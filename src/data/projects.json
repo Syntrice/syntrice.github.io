@@ -3,46 +3,86 @@
         "id": 3,
         "title": "Syntrice Record Shop",
         "repoLink": "https://github.com/Syntrice/syntrice-record-shop",
-        "category": "full-stack",
-        "description": "A RESTful API and Web App for a fictional record shop business.",
+        "description": "A RESTful API for a fictional record shop business. Consists of endpoints to manage Artist, Genre and Record entries, along with a work in progress Blazor frontend.",
         "icon": "fa6-solid:record-vinyl",
-        "imgPath": "/assets/project-images/syntrice-record-shop.gif"
+        "tags": [".NET", "Fullstack"],
+        "imgPath": "/assets/project-images/syntrice-record-shop.gif",
+        "technologies": [
+            "ASP.NET",
+            "Blazor",
+            "NUnit",
+            "Moq",
+            "Tailwind CSS",
+            "AutoMapper",
+            "Entity Framework",
+            "SQL Server"
+        ]
     },
     {
         "id": 2,
         "title": "Syntrice Contact Manager",
         "repoLink": "https://github.com/Syntrice/syntrice-contact-manager",
-        "category": "backend",
-        "description": "A console-based application for managing contact details.",
+        "description": "A console-based application for managing contact details. Uses a local SQLite database, along with a console frontend for adding, removing and updating entries.",
         "icon": "fa6-regular:address-card",
-        "imgPath": "/assets/project-images/syntrice-contact-manager.gif"
+        "tags": ["Console App", ".NET"],
+        "imgPath": "/assets/project-images/syntrice-contact-manager.gif",
+        "technologies": [
+            ".NET Generic Host",
+            "Spectre.Console",
+            "SQLite",
+            "Entity Framework",
+            "Fluent Validations",
+            "NUnit",
+            "Moq"
+        ]
     },
     {
         "id": 4,
-        "title": "Spreeview (Group Project)",
+        "title": "Spreeview (Team Project)",
         "repoLink": "https://github.com/nc-team-inertia/spreeview",
-        "category": "full-stack",
-        "description": "A social networking review website for TV Shows.",
+        "description": "A team project to create a social networking review website for TV Shows. Consists of an SQL Server, ASP.NET Backend, along with a Blazor frontend. Features authentication using Identity, and a live chat system using SignalR.",
         "icon": "heroicons:film-16-solid",
-        "imgPath": "/assets/project-images/spreeview.gif"
+        "tags": ["Team Project", ".NET", "Fullstack"],
+        "imgPath": "/assets/project-images/spreeview.gif",
+        "technologies": [
+            "ASP.NET",
+            "Blazor",
+            "NUnit",
+            "Identity",
+            "Tailwind CSS",
+            "TMDB API",
+            "AutoMapper",
+            "SignalR",
+            "Entity Framework",
+            "SQL Server"
+        ]
     },
     {
         "id": 1,
-        "title": "Syntrice.com (this site)",
+        "title": "Syntrice.com (This Site)",
         "repoLink": "https://github.com/Syntrice/syntrice.github.io",
-        "category": "front-end",
-        "description": "A static site built using the Astro JavaScript Framework.",
-        "icon": "heroicons:globe-alt"
+        "description": "This site was built using Astro, a JavaScript framework for content-driven websites. Features responsive design using Tailwind CSS.",
+        "icon": "heroicons:globe-alt",
+        "tags": ["Frontend"],
+        "technologies": [
+            "Astro",
+            "Tailwind CSS"
+        ]
     },
     {
         "id": 5,
         "title": "Chef Bot",
         "repoLink": "https://github.com/Syntrice/chef-bot",
         "deploymentLink": "https://app.syntrice.com/chef-bot",
-        "category": "front-end",
-        "description": "A personal AI chef assistant to generate recipies from cooking ingredients.",
+        "description": "A personal AI chef assistant to generate recipies from cooking ingredients. Completed as part of a Scrimba course. It is deployed on Netlify, and for recipie generation it utilizes Serverless Functions to call the Hugginface Inference API.",
         "icon": "fa6-solid:burger",
-        "imgPath": "/assets/project-images/chef-bot.png"
-
+        "imgPath": "/assets/project-images/chef-bot.png",
+        "technologies": [
+            "React",
+            "Tailwind CSS",
+            "Netlify",
+            "Serverless Functions",
+            "Huggingface Inference API"
+        ]
     }
 ]

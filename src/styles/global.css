@@ -9,6 +9,10 @@ body {
   @apply inline-block p-2 hover:bg-black/10 active:bg-black/10 rounded-md transition-colors;
 }
 
+.tag {
+  @apply inline-block p-2 rounded-md border-solid border-2 dark:border-white/50 border-black/50;
+}
+
 .icon {
   @apply inline relative bottom-0.5;
 

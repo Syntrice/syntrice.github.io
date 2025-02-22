@@ -7,21 +7,32 @@ import { Image } from 'astro:assets';
 
 <div class="p-5 dark:bg-black/10 bg-black/5 shadow rounded-2xl">
     <p class="mb-5 text-2xl font-bold"><Icon class="inline align-middle relative bottom-0.5" name={project.data.icon}></Icon> {project.data.title}</p>
-    <hr class="mb-2">
+    <hr>
+    <div class="grid grid-cols-2 grid-rows-1 max-md:grid-cols-1 gap-5 my-8">
+        <div>
+            { project.data.imgPath && 
+                <a class="inline-block mb-5" target="_blank" href={project.data.deploymentLink ? project.data.deploymentLink : project.data.repoLink}>
+                    <img class="rounded-2xl max-md:w-auto" src={project.data.imgPath} width="500">
+                </a> 
+            }
+            <p>{project.data.description}</p>
+        </div>
+        <div>
+            <p class="text-xl font-bold mb-5">Technologies</p>
+            <div class="flex flex-wrap gap-2">
+                { project.data.technologies.map((i: string) => 
+                    <p class="tag">{i}</p>
+                )}
+            </div>
+        </div>
+    </div>
     
-    { project.data.imgPath && 
-        <a class="inline-block" target="_blank" href={project.data.deploymentLink ? project.data.deploymentLink : project.data.repoLink}>
-            <img class="my-5 rounded-2xl" src={project.data.imgPath} width="500">
-        </a> 
-    }
-    
-    <p class="mb-5">{project.data.description}</p>
     <a target="_blank" class="button" href={project.data.repoLink}>
         <Icon class="icon" name="fa6-brands:square-github"/>
         GitHub</a>
     { project.data.deploymentLink && 
         <a class="button" href={project.data.deploymentLink}>
         <Icon class="icon" name="fa6-solid:globe"/>
-        Deployment</a>
+        Live Demo</a>
     }
 </div>

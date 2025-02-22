@@ -12,11 +12,12 @@ const projects = defineCollection({
         id: z.number(),
         title: z.string(),
         repoLink: z.string(),
-        category: z.string(),
         description: z.string(),
         icon: z.string().optional(),
         imgPath: z.string().optional(),
-        deploymentLink: z.string().optional()
+        deploymentLink: z.string().optional(),
+        tags: z.array(z.string()).optional(),
+        technologies: z.array(z.string())
     }),
 })
 
