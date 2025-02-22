@@ -10,13 +10,18 @@ import { Image } from 'astro:assets';
     <hr class="mb-2">
     
     { project.data.imgPath && 
-        <a href={project.data.repoLink}>
+        <a class="inline-block" target="_blank" href={project.data.deploymentLink ? project.data.deploymentLink : project.data.repoLink}>
             <img class="my-5 rounded-2xl" src={project.data.imgPath} width="500">
         </a> 
     }
     
     <p class="mb-5">{project.data.description}</p>
-    <a class="button" href={project.data.repoLink}>
+    <a target="_blank" class="button" href={project.data.repoLink}>
         <Icon class="icon" name="fa6-brands:square-github"/>
         GitHub</a>
+    { project.data.deploymentLink && 
+        <a class="button" href={project.data.deploymentLink}>
+        <Icon class="icon" name="fa6-solid:globe"/>
+        Deployment</a>
+    }
 </div>

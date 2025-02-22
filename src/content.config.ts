@@ -15,7 +15,8 @@ const projects = defineCollection({
         category: z.string(),
         description: z.string(),
         icon: z.string().optional(),
-        imgPath: z.string().optional()
+        imgPath: z.string().optional(),
+        deploymentLink: z.string().optional()
     }),
 })
 
