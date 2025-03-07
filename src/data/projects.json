@@ -85,5 +85,21 @@
             "Serverless Functions",
             "Huggingface Inference API"
         ]
+    },
+    {
+        "id": 0,
+        "title": "Meme Generator",
+        "repoLink": "https://github.com/Syntrice/meme-generator",
+        "deploymentLink": "https://app.syntrice.com/meme-generator",
+        "description": "A very simple project to build a meme generator using React. Completed as part of a Scrimba course. It is hosted on Netlify.",
+        "icon": "fa6-regular:images",
+        "imgPath": "/assets/project-images/meme-generator.png",
+        "technologies": [
+            "Vite",
+            "React",
+            "Tailwind CSS",
+            "Netlify",
+            "Imgflip API"
+        ]
     }
 ]
