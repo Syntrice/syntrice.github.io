@@ -87,7 +87,7 @@
         ]
     },
     {
-        "id": 0,
+        "id": 1.5,
         "title": "Meme Generator",
         "repoLink": "https://github.com/Syntrice/meme-generator",
         "deploymentLink": "https://app.syntrice.com/meme-generator",
@@ -100,6 +100,21 @@
             "Tailwind CSS",
             "Netlify",
             "Imgflip API"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Tenzies",
+        "repoLink": "https://github.com/Syntrice/tenzies",
+        "deploymentLink": "https://app.syntrice.com/tenzies",
+        "description": "A dice game based on Tenzi, built using React. Completed as part of a Scrimba course. It is hosted on Netlify.",
+        "icon": "fa6-solid:dice",
+        "imgPath": "/assets/project-images/tenzies.png",
+        "technologies": [
+            "Vite",
+            "React",
+            "Tailwind CSS",
+            "Netlify"
         ]
     }
 ]
