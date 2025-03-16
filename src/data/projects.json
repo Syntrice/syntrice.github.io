@@ -74,7 +74,7 @@
         "title": "Chef Bot",
         "repoLink": "https://github.com/Syntrice/chef-bot",
         "deploymentLink": "https://app.syntrice.com/chef-bot",
-        "description": "A personal AI chef assistant to generate recipies from cooking ingredients. Completed as part of a Scrimba course. It is deployed on Netlify, and for recipie generation it utilizes Serverless Functions to call the Hugginface Inference API.",
+        "description": "A personal AI chef assistant to generate recipes from cooking ingredients. Completed as part of a Scrimba course. It is deployed on Netlify, and for recipe generation it utilizes Serverless Functions to call the Hugginface Inference API.",
         "icon": "fa6-solid:burger",
         "imgPath": "/assets/project-images/chef-bot.png",
         "technologies": [
