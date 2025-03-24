@@ -8,6 +8,7 @@
         "tags": [".NET", "Fullstack"],
         "imgPath": "/assets/project-images/syntrice-record-shop.gif",
         "technologies": [
+            "C# / .NET",
             "ASP.NET",
             "Blazor",
             "NUnit",
@@ -27,6 +28,7 @@
         "tags": ["Console App", ".NET"],
         "imgPath": "/assets/project-images/syntrice-contact-manager.gif",
         "technologies": [
+            "C# / .NET",
             ".NET Generic Host",
             "Spectre.Console",
             "SQLite",
@@ -45,6 +47,7 @@
         "tags": ["Team Project", ".NET", "Fullstack"],
         "imgPath": "/assets/project-images/spreeview.gif",
         "technologies": [
+            "C# / .NET",
             "ASP.NET",
             "Blazor",
             "NUnit",
@@ -65,6 +68,7 @@
         "icon": "heroicons:globe-alt",
         "tags": ["Frontend"],
         "technologies": [
+            "JavaScript",
             "Astro",
             "Tailwind CSS"
         ]
@@ -78,6 +82,7 @@
         "icon": "fa6-solid:burger",
         "imgPath": "/assets/project-images/chef-bot.png",
         "technologies": [
+            "JavaScript",
             "Vite",
             "React",
             "Tailwind CSS",
@@ -95,6 +100,7 @@
         "icon": "fa6-regular:images",
         "imgPath": "/assets/project-images/meme-generator.png",
         "technologies": [
+            "TypeScript",
             "Vite",
             "React",
             "Tailwind CSS",
@@ -111,10 +117,33 @@
         "icon": "fa6-solid:dice",
         "imgPath": "/assets/project-images/tenzies.png",
         "technologies": [
+            "TypeScript",
             "Vite",
             "React",
             "Tailwind CSS",
             "Netlify"
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Syntrice EShop",
+        "repoLink": "https://github.com/Syntrice/syntrice-e-shop",
+        "description": "A work-in-progress ecommerce API built using ASP.NET. As an exercise in authentication and cybersecurity, it features password hashing and salt generation using Pbkdf2, and configurable JWT authentication with refresh token support.",
+        "icon": "fa6-solid:cart-shopping",
+        "imgPath": "/assets/project-images/syntrice-eshop.png",
+        "technologies": [
+            "C# / .NET",
+            "ASP.NET",
+            "NUnit",
+            "Shouldly",
+            "NSubstitute",
+            "Password Hashing + Salting",
+            "JWT Authentication",
+            "Cookies",
+            "Refresh Tokens",
+            "Entity Framework Core",
+            "SQLite",
+            "Test-Driven Development"
         ]
     }
 ]
