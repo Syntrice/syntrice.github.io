@@ -28,7 +28,7 @@ const compositions = defineCollection({
         title: z.string(),
         description: z.string(),
         scoreLink: z.string().optional(),
-        soundcloudEmbed: z.string().optional(),
+        recordingUrl: z.string().optional(),
     }),
 })
 
