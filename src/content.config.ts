@@ -19,7 +19,7 @@ const projects = defineCollection({
         tags: z.array(z.string()).optional(),
         technologies: z.array(z.string())
     }),
-})
+});
 
 const compositions = defineCollection({
     loader: file("src/data/compositions.json"),
@@ -29,8 +29,9 @@ const compositions = defineCollection({
         description: z.string(),
         scoreLink: z.string().optional(),
         recordingUrl: z.string().optional(),
+        codeUrl: z.string().optional(),
     }),
-})
+});
 
 const navlinks = defineCollection({
     loader: file("src/data/navlinks.json"),
@@ -39,7 +40,7 @@ const navlinks = defineCollection({
         href: z.string(),
         title: z.string(),
     }),
-})
+});
 
 // 4. Export a single `collections` object to register your collection(s)
 export const collections = { compositions, projects, navlinks };

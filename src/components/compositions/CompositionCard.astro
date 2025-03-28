@@ -15,6 +15,10 @@ import { Icon } from 'astro-icon/components'
                 <Icon class="icon" name="heroicons:document"/>
                 Score</a> 
         }
+
+        {composition.data.codeUrl && <a class="button" href={composition.data.codeUrl}>
+            <Icon class="icon" name="heroicons:code-bracket-16-solid"/>
+            Code</a> }
     </div>
     <div class="grow shrink basis-0 flex items-center justify-center">
         <audio controls>
