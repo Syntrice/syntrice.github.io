@@ -70,7 +70,10 @@
         "technologies": [
             "JavaScript",
             "Astro",
-            "Tailwind CSS"
+            "Tailwind CSS",
+            "AWS S3",
+            "AWS CloudFront",
+            "GitHub Pages"
         ]
     },
     {
