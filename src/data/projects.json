@@ -148,5 +148,22 @@
             "SQLite",
             "Test-Driven Development"
         ]
+    },
+    {
+        "id": 9,
+        "title": "Guess the Word",
+        "repoLink": "https://github.com/Syntrice/guess-the-word",
+        "deploymentLink": "https://app.syntrice.com/guess-the-word",
+        "description": "A word guessing game based on hangman, built using React and TypeScript. It is hosted on Netlify.",
+        "icon": "fa6-regular:circle-question",
+        "imgPath": "/assets/project-images/guess-the-word.png",
+        "technologies": [
+            "TypeScript",
+            "Vite",
+            "React",
+            "Tailwind CSS",
+            "Netlify",
+            "Custom Hooks"
+        ]
     }
 ]
