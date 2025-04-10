@@ -165,5 +165,26 @@
             "Netlify",
             "Custom Hooks"
         ]
+    },
+    {
+        "id": 10,
+        "title": "Eventment",
+        "repoLink": "https://github.com/Syntrice/eventment",
+        "description": "A work-in-progress events listing and RSVP platform built using next.js.",
+        "icon": "fa6-regular:calendar-days",
+        "imgPath": "/assets/project-images/eventment.png",
+        "technologies": [
+            "TypeScript",
+            "Next.js",
+            "React",
+            "Tailwind CSS",
+            "Auth.js",
+            "Prisma",
+            "SQLite",
+            "Zod",
+            "Bcrypt.js",
+            "Password Hashing and Salting",
+            "OAuth"
+        ]
     }
 ]
