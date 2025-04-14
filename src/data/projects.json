@@ -1,11 +1,13 @@
 [
     {
-        "id": 3,
+        "id": 1,
         "title": "Syntrice Record Shop",
         "repoLink": "https://github.com/Syntrice/syntrice-record-shop",
         "description": "A RESTful API for a fictional record shop business. Consists of endpoints to manage Artist, Genre and Record entries, along with a work in progress Blazor frontend.",
-        "icon": "fa6-solid:record-vinyl",
-        "tags": [".NET", "Fullstack"],
+        "tags": [
+            3,
+            6
+        ],
         "imgPath": "/assets/project-images/syntrice-record-shop.gif",
         "technologies": [
             "C# / .NET",
@@ -24,8 +26,10 @@
         "title": "Syntrice Contact Manager",
         "repoLink": "https://github.com/Syntrice/syntrice-contact-manager",
         "description": "A console-based application for managing contact details. Uses a local SQLite database, along with a console frontend for adding, removing and updating entries.",
-        "icon": "fa6-regular:address-card",
-        "tags": ["Console App", ".NET"],
+        "tags": [
+            5,
+            6
+        ],
         "imgPath": "/assets/project-images/syntrice-contact-manager.gif",
         "technologies": [
             "C# / .NET",
@@ -39,12 +43,15 @@
         ]
     },
     {
-        "id": 4,
+        "id": 3,
         "title": "Spreeview (Team Project)",
         "repoLink": "https://github.com/nc-team-inertia/spreeview",
         "description": "A team project to create a social networking review website for TV Shows. Consists of an SQL Server, ASP.NET Backend, along with a Blazor frontend. Features authentication using Identity, and a live chat system using SignalR.",
-        "icon": "heroicons:film-16-solid",
-        "tags": ["Team Project", ".NET", "Fullstack"],
+        "tags": [
+            4,
+            6,
+            1
+        ],
         "imgPath": "/assets/project-images/spreeview.gif",
         "technologies": [
             "C# / .NET",
@@ -61,12 +68,13 @@
         ]
     },
     {
-        "id": 1,
+        "id": 4,
         "title": "Syntrice.com (This Site)",
         "repoLink": "https://github.com/Syntrice/syntrice.github.io",
         "description": "This site was built using Astro, a JavaScript framework for content-driven websites. Features responsive design using Tailwind CSS.",
-        "icon": "heroicons:globe-alt",
-        "tags": ["Frontend"],
+        "tags": [
+            2
+        ],
         "technologies": [
             "JavaScript",
             "Astro",
@@ -82,8 +90,10 @@
         "repoLink": "https://github.com/Syntrice/chef-bot",
         "deploymentLink": "https://app.syntrice.com/chef-bot",
         "description": "A personal AI chef assistant to generate recipes from cooking ingredients. Completed as part of a Scrimba course. It is deployed on Netlify, and for recipe generation it utilizes Serverless Functions to call the Hugginface Inference API.",
-        "icon": "fa6-solid:burger",
         "imgPath": "/assets/project-images/chef-bot.png",
+        "tags": [
+            2
+        ],
         "technologies": [
             "JavaScript",
             "Vite",
@@ -95,13 +105,15 @@
         ]
     },
     {
-        "id": 1.5,
+        "id": 6,
         "title": "Meme Generator",
         "repoLink": "https://github.com/Syntrice/meme-generator",
         "deploymentLink": "https://app.syntrice.com/meme-generator",
         "description": "A very simple project to build a meme generator using React. Completed as part of a Scrimba course. It is hosted on Netlify.",
-        "icon": "fa6-regular:images",
         "imgPath": "/assets/project-images/meme-generator.png",
+        "tags": [
+            2
+        ],
         "technologies": [
             "TypeScript",
             "Vite",
@@ -117,8 +129,10 @@
         "repoLink": "https://github.com/Syntrice/tenzies",
         "deploymentLink": "https://app.syntrice.com/tenzies",
         "description": "A dice game based on Tenzi, built using React. Completed as part of a Scrimba course. It is hosted on Netlify.",
-        "icon": "fa6-solid:dice",
         "imgPath": "/assets/project-images/tenzies.png",
+        "tags": [
+            2
+        ],
         "technologies": [
             "TypeScript",
             "Vite",
@@ -132,8 +146,10 @@
         "title": "Syntrice EShop",
         "repoLink": "https://github.com/Syntrice/syntrice-e-shop",
         "description": "A work-in-progress ecommerce API built using ASP.NET. As an exercise in authentication and cybersecurity, it features password hashing and salt generation using Pbkdf2, and configurable JWT authentication with refresh token support.",
-        "icon": "fa6-solid:cart-shopping",
         "imgPath": "/assets/project-images/syntrice-eshop.png",
+        "tags": [
+            3
+        ],
         "technologies": [
             "C# / .NET",
             "ASP.NET",
@@ -155,8 +171,10 @@
         "repoLink": "https://github.com/Syntrice/guess-the-word",
         "deploymentLink": "https://app.syntrice.com/guess-the-word",
         "description": "A word guessing game based on hangman, built using React and TypeScript. It is hosted on Netlify.",
-        "icon": "fa6-regular:circle-question",
         "imgPath": "/assets/project-images/guess-the-word.png",
+        "tags": [
+            2
+        ],
         "technologies": [
             "TypeScript",
             "Vite",
@@ -171,8 +189,10 @@
         "title": "Eventment",
         "repoLink": "https://github.com/Syntrice/eventment",
         "description": "A work-in-progress events listing and RSVP platform built using next.js.",
-        "icon": "fa6-regular:calendar-days",
         "imgPath": "/assets/project-images/eventment.png",
+        "tags": [
+            1
+        ],
         "technologies": [
             "TypeScript",
             "Next.js",

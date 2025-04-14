@@ -5,11 +5,12 @@ import Layout from '@layouts/MainLayout.astro';
 import { getCollection } from 'astro:content';
 
 const projects = await getCollection('projects');
+const projectTags = await getCollection('projectTags');
 
 ---
 
 <Layout pageTitle="Projects">
 	<SiteWrapper>
-		<ProjectDisplay projects={projects} client:load/>
+		<ProjectDisplay projectTags={projectTags} projects={projects} client:load/>
 	</SiteWrapper>
 </Layout>
