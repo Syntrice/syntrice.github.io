@@ -2,9 +2,17 @@
 import { defineCollection, z } from 'astro:content';
 
 // 2. Import loader(s)
-import { glob, file } from 'astro/loaders';
+import { file } from 'astro/loaders';
 
 // 3. Define your collection(s)
+
+const projectTags = defineCollection({
+    loader: file("src/data/project-tags.json"),
+    schema: z.object({
+        id: z.number(),
+        label: z.string()
+    })
+})
 
 const projects = defineCollection({
     loader: file("src/data/projects.json"),
@@ -13,10 +21,9 @@ const projects = defineCollection({
         title: z.string(),
         repoLink: z.string(),
         description: z.string(),
-        icon: z.string().optional(),
         imgPath: z.string().optional(),
         deploymentLink: z.string().optional(),
-        tags: z.array(z.string()).optional(),
+        tags: z.array(z.number()),
         technologies: z.array(z.string())
     }),
 });
@@ -43,4 +50,4 @@ const navlinks = defineCollection({
 });
 
 // 4. Export a single `collections` object to register your collection(s)
-export const collections = { compositions, projects, navlinks };
+export const collections = { compositions, projects, navlinks, projectTags };

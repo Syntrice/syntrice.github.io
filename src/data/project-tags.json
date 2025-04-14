@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "label": "Fullstack"
+  },
+  {
+    "id": 2,
+    "label": "Frontend"
+  },
+  {
+    "id": 3,
+    "label": "Backend"
+  },
+  {
+    "id": 4,
+    "label": "Team Project"
+  },
+  {
+    "id": 5,
+    "label": "Console App"
+  },
+  {
+    "id": 6,
+    "label": ".NET"
+  }
+]

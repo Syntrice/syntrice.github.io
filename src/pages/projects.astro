@@ -1,23 +1,16 @@
 ---
-import ProjectCard from '@components/projects/ProjectCard.astro';
+import ProjectDisplay from '@components/projects/ProjectDisplay';
 import SiteWrapper from '@components/SiteWrapper.astro';
 import Layout from '@layouts/MainLayout.astro';
 import { getCollection } from 'astro:content';
 
 const projects = await getCollection('projects');
+const projectTags = await getCollection('projectTags');
 
 ---
 
 <Layout pageTitle="Projects">
 	<SiteWrapper>
-		{projects && (
-			<ul class="flex flex-col gap-5 my-5">
-				{projects.sort((a, b) => b.data.id - a.data.id).map(obj => (
-					<li>
-						<ProjectCard project={obj}/>
-					</li>
-				))}
-			</ul>
-		)}
+		<ProjectDisplay projectTags={projectTags} projects={projects} client:load/>
 	</SiteWrapper>
 </Layout>
