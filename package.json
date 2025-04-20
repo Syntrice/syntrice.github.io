@@ -6,22 +6,21 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "generate-icons": "@svgr/cli --out-dir src/components/icons --typescript -- src/icons/"
   },
   "dependencies": {
     "@astrojs/react": "^4.2.4",
     "@fontsource-variable/inter": "^5.1.1",
-    "@iconify-json/fa6-brands": "^1.2.5",
-    "@iconify-json/fa6-regular": "^1.2.3",
-    "@iconify-json/fa6-solid": "^1.2.3",
-    "@iconify-json/heroicons": "^1.2.2",
     "@tailwindcss/vite": "^4.0.5",
     "@types/react": "^19.1.1",
     "@types/react-dom": "^19.1.2",
     "astro": "^5.2.5",
-    "astro-icon": "^1.1.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "tailwindcss": "^4.0.5"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^8.1.0"
   }
 }
