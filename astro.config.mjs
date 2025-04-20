@@ -1,8 +1,6 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
 import tailwindcss from "@tailwindcss/vite";
-
-import icon from "astro-icon";
+import { defineConfig } from 'astro/config';
 
 import react from "@astrojs/react";
 
@@ -12,6 +10,6 @@ export default defineConfig({
       plugins: [tailwindcss()]
   },
 
-  integrations: [icon(), react()],
+  integrations: [react()],
   site: 'https://syntrice.com'
 });
