@@ -1,7 +1,7 @@
 ---
+import { Fa6BrandsLinkedin, Fa6BrandsSquareGithub, Fa6RegularEnvelope } from "@components/icons";
 import Wrapper from "@components/SiteWrapper.astro";
 import site from "@data/site.json";
-import { Icon } from 'astro-icon/components';
 import FooterLink from "./FooterLink.astro";
 ---
 
@@ -11,15 +11,15 @@ import FooterLink from "./FooterLink.astro";
             <div> 
                 <ul>
                     <li>
-                        <FooterLink href={"mailto:" + site.contact.email}><Icon class="inline" name="fa6-regular:envelope"/> {site.contact.email}</FooterLink>
+                        <FooterLink href={"mailto:" + site.contact.email}><Fa6RegularEnvelope className="icon"/> {site.contact.email}</FooterLink>
                     </li>
                     <li>
                         <FooterLink href={site.contact.links.github}>
-                            <Icon class="icon" name="fa6-brands:square-github"/> GitHub</FooterLink>
+                            <Fa6BrandsSquareGithub className="icon"/> GitHub</FooterLink>
                     </li>
                     <li>
                         <FooterLink href={site.contact.links.linkedIn}>
-                            <Icon class="icon" name="fa6-brands:linkedin"/> LinkedIn</FooterLink>
+                            <Fa6BrandsLinkedin className="icon"/> LinkedIn</FooterLink>
                     </li>
                 </ul>
             </div>

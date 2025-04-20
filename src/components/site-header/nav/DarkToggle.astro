@@ -1,15 +1,14 @@
 ---
-import { Icon } from 'astro-icon/components'
+import { HeroiconsMoon, HeroiconsSun } from '@components/icons'
 ---
 
 <button
     type="button"
     class="darkmodeToggle block cursor-pointer active:bg-gray-300 hover:bg-gray-300 p-3 rounded-2xl transition-colors dark:active:bg-slate-600 dark:hover:bg-slate-600"
 >
-    <Icon name="heroicons:sun" class="size-6 not-dark:hidden text-white"></Icon>
-    <Icon name="heroicons:moon" class="size-6 dark:hidden"></Icon>
+    <HeroiconsSun className="size-6 not-dark:hidden text-white"></HeroiconsSun>
+    <HeroiconsMoon className="size-6 dark:hidden text-white"></HeroiconsMoon>
 </button>
-
 
 <script>
     

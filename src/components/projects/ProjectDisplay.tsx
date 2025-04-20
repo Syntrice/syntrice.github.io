@@ -27,7 +27,7 @@ export default function ProjectDisplay({
 
     return data
       .map((obj) => (
-        <li>
+        <li key={obj.data.id}>
           <ProjectCard project={obj} />
         </li>
       ))
@@ -49,7 +49,7 @@ export default function ProjectDisplay({
           </button>
         </li>
         {projectTags.map((tag) => (
-          <li>
+          <li key={tag.id}>
             <button
               onClick={() => setFilter(tag.data.id)}
               className={

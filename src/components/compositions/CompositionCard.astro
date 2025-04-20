@@ -1,23 +1,22 @@
 ---
 const { composition: composition } = Astro.props;
-import { Icon } from 'astro-icon/components'
-
+import { HeroiconsCodeBracket16Solid, HeroiconsDocument, HeroiconsMusicalNote } from '@components/icons';
 ---
 
 <div class="p-5 dark:bg-black/10 bg-black/5 shadow rounded-2xl flex gap-10 max-md:flex-col max-md:gap-5">
     <div class="row-start-1 grow shrink basis-0">
-        <p class="mb-5 text-2xl font-bold"><Icon class="inline align-middle relative bottom-0.5" name="heroicons:musical-note"></Icon> {composition.data.title}</p>
+        <p class="mb-5 text-2xl font-bold"><HeroiconsMusicalNote className="inline align-middle relative bottom-0.5"/> {composition.data.title}</p>
         <hr class="mb-2">
         <p class="mb-5">{composition.data.description}</p>
         
         { composition.data.scoreLink && 
             <a class="button" href={composition.data.scoreLink}>
-                <Icon class="icon" name="heroicons:document"/>
+                <HeroiconsDocument className="icon"/>
                 Score</a> 
         }
 
         {composition.data.codeUrl && <a class="button" href={composition.data.codeUrl}>
-            <Icon class="icon" name="heroicons:code-bracket-16-solid"/>
+            <HeroiconsCodeBracket16Solid className="icon"/>
             Code</a> }
     </div>
     <div class="grow shrink basis-0 flex items-center justify-center">
